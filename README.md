@@ -1,10 +1,13 @@
 ## This repo contains the code for making a ESP32 as a BLE Gamepad
+
 I have used Arduino IDE while programming and uploading the code to the board and Visual studio for the header files development.
+I am using a 30 GPIOs ESP32 DevKit and 2 * 2-axis Joystick and 10 Push Buttons.
 
+The Header folder contains the header_files/library needed to be installed in the IDE.
+The Gamepad_Code folder contains the Code will be uploading to the ESP32 Dev-Kit.
 
-This Header folder contains the header_files/library needed to be installed in the IDE.
 ## Credits
-Link to the refrence code (Original Developer Learning Dev) [Link to Refernce Code](https://github.com/lemmingDev/ESP32-BLE-Gamepad)
+Link to the refrence code inspired form the Learning Dev ESP32 Gamepad [Link to Refernce Code](https://github.com/lemmingDev/ESP32-BLE-Gamepad)
 
 ## Notes
 This library allows you to make the ESP32 act as a Bluetooth Gamepad and control what it does.  

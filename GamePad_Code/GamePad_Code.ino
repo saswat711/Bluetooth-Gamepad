@@ -256,6 +256,7 @@ void loop()
         updateBtnVal();
         // updating Fun values
         updateFunVal();  
+        
     }
    else
     {

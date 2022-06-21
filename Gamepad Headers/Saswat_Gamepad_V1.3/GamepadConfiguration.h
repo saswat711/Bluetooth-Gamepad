@@ -44,15 +44,6 @@
 #define BUTTON_28 0x1c
 #define BUTTON_29 0x1d
 
-#define HAT_CENTERED 0
-#define HAT_UP 1
-#define HAT_UP_RIGHT 2
-#define HAT_RIGHT 3
-#define HAT_DOWN_RIGHT 4
-#define HAT_DOWN 5
-#define HAT_DOWN_LEFT 6
-#define HAT_LEFT 7
-#define HAT_UP_LEFT 8
 
 #define X_AXIS 0
 #define Y_AXIS 1
@@ -60,23 +51,9 @@
 #define RX_AXIS 3
 #define RY_AXIS 4
 #define RZ_AXIS 5
-#define SLIDER1 6
-#define SLIDER2 7
-
-#define RUDDER 0
-#define THROTTLE 1
-#define ACCELERATOR 2
-#define BRAKE 3
-#define STEERING 4
 
 #define START_BUTTON 0
 #define SELECT_BUTTON 1
-#define MENU_BUTTON 2
-#define HOME_BUTTON 3
-#define BACK_BUTTON 4
-#define VOLUME_INC_BUTTON 5
-#define VOLUME_DEC_BUTTON 6
-#define VOLUME_MUTE_BUTTON 7
 
 class GamepadConfiguration
 {
@@ -85,10 +62,8 @@ private:
     bool _autoReport;
     uint8_t _hidReportId;
     uint16_t _buttonCount;
-    uint8_t _hatSwitchCount;
     bool _whichSpecialButtons[POSSIBLESPECIALBUTTONS];
     bool _whichAxes[POSSIBLEAXES];
-    bool _whichSimulationControls[POSSIBLESIMULATIONCONTROLS];
 	uint16_t _vid;
 	uint16_t _pid;
 
@@ -102,17 +77,9 @@ public:
     uint8_t getTotalSpecialButtonCount();
     uint8_t getDesktopSpecialButtonCount();
     uint8_t getConsumerSpecialButtonCount();
-    uint8_t getHatSwitchCount();
     uint8_t getAxisCount();
-    uint8_t getSimulationCount();
     bool getIncludeStart();
     bool getIncludeSelect();
-    bool getIncludeMenu();
-    bool getIncludeHome();
-    bool getIncludeBack();
-    bool getIncludeVolumeInc();
-    bool getIncludeVolumeDec();
-    bool getIncludeVolumeMute();
     const bool *getWhichSpecialButtons() const;
     bool getIncludeXAxis();
     bool getIncludeYAxis();
@@ -120,15 +87,7 @@ public:
     bool getIncludeRxAxis();
     bool getIncludeRyAxis();
     bool getIncludeRzAxis();
-    bool getIncludeSlider1();
-    bool getIncludeSlider2();
     const bool *getWhichAxes() const;
-    bool getIncludeRudder();
-    bool getIncludeThrottle();
-    bool getIncludeAccelerator();
-    bool getIncludeBrake();
-    bool getIncludeSteering();
-    const bool *getWhichSimulationControls() const;
 	uint16_t getVid();
 	uint16_t getPid();
 
@@ -136,31 +95,17 @@ public:
     void setAutoReport(bool value);
     void setHidReportId(uint8_t value);
     void setButtonCount(uint16_t value);
-    void setHatSwitchCount(uint8_t value);
     void setIncludeStart(bool value);
     void setIncludeSelect(bool value);
-    void setIncludeMenu(bool value);
-    void setIncludeHome(bool value);
-    void setIncludeBack(bool value);
-    void setIncludeVolumeInc(bool value);
-    void setIncludeVolumeDec(bool value);
-    void setIncludeVolumeMute(bool value);
-    void setWhichSpecialButtons(bool start, bool select, bool menu, bool home, bool back, bool volumeInc, bool volumeDec, bool volumeMute);
+    void setWhichSpecialButtons(bool start, bool select);
     void setIncludeXAxis(bool value);
     void setIncludeYAxis(bool value);
     void setIncludeZAxis(bool value);
     void setIncludeRxAxis(bool value);
     void setIncludeRyAxis(bool value);
     void setIncludeRzAxis(bool value);
-    void setIncludeSlider1(bool value);
-    void setIncludeSlider2(bool value);
-    void setWhichAxes(bool xAxis, bool yAxis, bool zAxis, bool rxAxis, bool ryAxis, bool rzAxis, bool slider1, bool slider2);
-    void setIncludeRudder(bool value);
-    void setIncludeThrottle(bool value);
-    void setIncludeAccelerator(bool value);
-    void setIncludeBrake(bool value);
-    void setIncludeSteering(bool value);
-    void setWhichSimulationControls(bool rudder, bool throttle, bool accelerator, bool brake, bool steering);
+    void setWhichAxes(bool xAxis, bool yAxis, bool zAxis, bool rxAxis, bool ryAxis, bool rzAxis);
+   
 	void setVid(uint16_t value);
 	void setPid(uint16_t value);
 };
