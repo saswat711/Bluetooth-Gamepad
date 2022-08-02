@@ -1,4 +1,4 @@
-
+ 
 #include <Arduino.h>
 #include <Gamepad.h>
 #include <Bounce2.h> // For debounceing the switches immediately
@@ -8,9 +8,10 @@
 Gamepad bleGamepad;
 
 // Defining Inputs pins
-//joystick
-#define xsP 33
-#define ysP 32
+     //joystick
+#define xsP 32
+#define ysP 33
+                                                                               
 #define zP 34
 #define rzP 35
 // trigger
@@ -18,6 +19,7 @@ Gamepad bleGamepad;
 #define rtriP 26
 //Control buttons
 #define aP 22
+
 #define bP 23
 #define xP 21
 #define yP 19
@@ -29,7 +31,7 @@ Gamepad bleGamepad;
 
 // For creating multiple bounce objects
 #define noButtons 10
-byte buttonPins[noButtons] = {ltriP, rtriP, aP, bP, xP, yP, lbP, rbP, selP, startP};
+byte buttonPins[noButtons] = {(byte)ltriP,(byte)rtriP, (byte)aP, (byte)bP, (byte)xP, (byte)yP, (byte)lbP, (byte)rbP, (byte)selP, (byte)startP};
 Bounce debouncers[noButtons];
 
 // Joysticks Integer
@@ -43,6 +45,9 @@ int lTrig = 0 ;
 int rTrig = 0;
 
 // for Buttons
+
+
+
 int A = 0;
 int B = 0;
 int X = 0;
