@@ -11,20 +11,24 @@ Gamepad bleGamepad;
      //joystick
 #define xsP 32
 #define ysP 33
-                                                                               
+
+                                                                              
 #define zP 34
 #define rzP 35
+
 // trigger
-#define ltriP 25
+#define ltriP 13
 #define rtriP 26
+
 //Control buttons
-#define aP 22
+#define aP 15
 
 #define bP 23
 #define xP 21
 #define yP 19
 #define lbP 18
 #define rbP 2
+
 // Function buttons
 #define selP 5
 #define startP 4
