@@ -1,4 +1,4 @@
-# In this project we are trying to build a Gamepad which is able to connect with other devices using Bluetooth. The Gamepad is an HID which is mostly use in playing video games in computers, phones, tablets, Xbox, e.t.c. But Gamepad are not just limited to playing video games. We can modify them to have act as a flight/ drone controller or a robot/machine controller. Opportunities are endless if we understand how to operate with Bluetooth especially as a HID.
+**In this project we are trying to build a Gamepad which is able to connect with other devices using Bluetooth. The Gamepad is an HID which is mostly use in playing video games in computers, phones, tablets, Xbox, e.t.c. But Gamepad are not just limited to playing video games. We can modify them to have act as a flight/ drone controller or a robot/machine controller. Opportunities are endless if we understand how to operate with Bluetooth especially as a HID.**
 
 # Design Constraints:
 The gamepad should communicate wirelessly over Bluetooth.
@@ -15,16 +15,16 @@ The gamepad should have a left shoulder button and one right shoulder buttons.
 The gamepad should have a normal 4 front facing buttons for player actions.
 
 # Hardware Used:   
-ESP-32 Soc (Dev Kit): It allows us to communicate with other devices through Bluetooth. It also has high performance cores and uses ultra-low power to operate.
-Analog Joysticks: For Player movement controls
-Push Button switches: For trigger, shoulder, front faced, function buttons
-Wires: For interconnections
+*ESP-32 Soc (Dev Kit): It allows us to communicate with other devices through Bluetooth. It also has high performance cores and uses ultra-low power to operate.
+*Analog Joysticks: For Player movement controls
+*Push Button switches: For trigger, shoulder, front faced, function buttons
+*Wires: For interconnections
 
 # Software Used:   
-Arduino IDE, Visual Studio Code
-Online Libraries like Bounce, Nimble(Recommend we can also use ESP32 BLE library) for making ESP-32 as HID or minimizing input delay, E.T.C.
-Link to Online Libraries Used:
-Bounce Library, Nimble Library
+*Arduino IDE, Visual Studio Code
+*Online Libraries like Bounce, Nimble(Recommend we can also use ESP32 BLE library) for making ESP-32 as HID or minimizing input delay, E.T.C.
+*Link to Online Libraries Used:
+*Bounce Library, Nimble Library
 
 
 The layout is as follow
