@@ -27,11 +27,11 @@ Gamepad bleGamepad;
 #define xP 21
 #define yP 19
 #define lbP 18
-#define rbP 2
+#define rbP 4
 
 // Function buttons
 #define selP 5
-#define startP 4
+#define startP 2
 
 // For creating multiple bounce objects
 #define noButtons 10
